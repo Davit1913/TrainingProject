@@ -4,7 +4,7 @@
 
 // export const obj = {};
 
-import { addDivWithParagraph } from "addDivWithParagraph";
+import { addDivWithParagraph } from "./js/addDivWithParagraph";
 
 
 

@@ -4,3 +4,6 @@
 // root.onclick = alertFun;
 
 // root.innerHTML = "TEST";
+
+import "./css/style.css";
+// import "./App";
