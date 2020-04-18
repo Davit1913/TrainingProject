@@ -2,7 +2,7 @@
 import { p } from "../../../App";
 import { createNewButton } from "../createNewButton";
 
-export function appendRemoveButtonTo() { //createRemoveButton
+export function createRemoveButton() {
     //TODO
     //Edit-i jamanak tvyal div@ remove anelu depq@
     let removeButton = createNewButton();

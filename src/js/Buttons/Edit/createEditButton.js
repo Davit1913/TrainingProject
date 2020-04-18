@@ -2,7 +2,7 @@
 import { createNewButton } from "../createNewButton";
 import { editClosestParagraph } from "./editClosestParagraph";
 
-export function appendEditButtonTo() { //createEditButton()
+export function createEditButton() {
     let editButton = createNewButton();
     editButton.innerText = "Edit";
     editButton.addEventListener("click", editClosestParagraph);

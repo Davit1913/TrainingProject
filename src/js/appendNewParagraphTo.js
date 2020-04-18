@@ -1,6 +1,6 @@
 //append new paragraph to the passed div
 import { p } from "../App";
-export function appendNewParagraphTo(paragraphText) { //createParagraph(paragraphText)
+export function createParagraph(paragraphText) {
     let newParagraph = document.createElement("p");
     
     paragraphText == "" ?

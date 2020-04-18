@@ -1,7 +1,6 @@
-// import { addDivWithParagraph } from "./js/addDivWithParagraph";
-import { appendNewParagraphTo } from "./js/appendNewParagraphTo";
-import { appendEditButtonTo } from "./js/Buttons/Edit/appendEditButtonTo";
-import { appendRemoveButtonTo } from "./js/Buttons/Remove/appendRemoveButtonTo";
+import { createParagraph } from "./js/createParagraph";
+import { createEditButton } from "./js/Buttons/Edit/createEditButton";
+import { createRemoveButton } from "./js/Buttons/Remove/createRemoveButton";
 export let p = {
     paragraphs: [],
     paragraphNumber: -1,
@@ -9,9 +8,9 @@ export let p = {
 
 export class Row {
     constructor(paragraphText) {
-        this.paragraph = appendNewParagraphTo(paragraphText);
-        this.editButton = appendEditButtonTo();
-        this.removeButton = appendRemoveButtonTo();
+        this.paragraph = createParagraph(paragraphText);
+        this.editButton = createEditButton();
+        this.removeButton = createRemoveButton();
     }
 
     appendRowTo(div) {
