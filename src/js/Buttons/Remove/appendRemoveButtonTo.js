@@ -1,4 +1,7 @@
 //Create "Remove" button (which removes closest div) and append it to the passed div
+import { p } from "../../../App";
+import { createNewButton } from "../createNewButton";
+
 export function appendRemoveButtonTo(div) {
     //TODO
     //Edit-i jamanak tvyal div@ remove anelu depq@
@@ -11,7 +14,7 @@ export function appendRemoveButtonTo(div) {
     this.closest("div").remove();     
     // this.closest("div").style.display = "none";
     
-    paragraphs[+this.getAttribute("data-number")].isRemoved = true;
-    console.log(paragraphs);
+    p.paragraphs[+this.getAttribute("data-number")].isRemoved = true;
+    console.log(p.paragraphs);
     }
   }

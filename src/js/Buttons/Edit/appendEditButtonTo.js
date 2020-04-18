@@ -1,4 +1,5 @@
 //Create "Edit" button and append it to the passed div
+import { createNewButton } from "../createNewButton";
 import { editClosestParagraph } from "./editClosestParagraph";
 
 export function appendEditButtonTo(div) {

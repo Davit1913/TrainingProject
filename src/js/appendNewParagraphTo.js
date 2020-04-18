@@ -1,4 +1,5 @@
 //append new paragraph to the passed div
+import { p } from "../App";
 export function appendNewParagraphTo(div) {
     let newParagraph = document.createElement("p");
     
@@ -9,8 +10,8 @@ export function appendNewParagraphTo(div) {
     newParagraph.style.float = "left";
     div.append(newParagraph);
     
-    paragraphs.push({
-      paragraphNumber,
+    p.paragraphs.push({
+      paragraphNumber: p.paragraphNumber,
       isRemoved: false,
     })
   }

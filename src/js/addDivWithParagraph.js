@@ -2,9 +2,10 @@
 import { appendNewParagraphTo } from "./appendNewParagraphTo";
 import { appendRemoveButtonTo } from "./Buttons/Remove/appendRemoveButtonTo";
 import { appendEditButtonTo } from "./Buttons/Edit/appendEditButtonTo";
+import { p } from "../App";
 
 export function addDivWithParagraph() {
-    paragraphNumber++;
+    p.paragraphNumber++;
     
     let newDiv = document.createElement("div");
     // newDiv.id=`paragraph${paragraphNumber}`;
@@ -23,5 +24,5 @@ export function addDivWithParagraph() {
     textInput.value = "";
     textInput.focus();
     
-    console.log(paragraphs);
+    console.log(p.paragraphs);
   }
