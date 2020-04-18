@@ -1,14 +1,14 @@
 //append new paragraph to the passed div
 import { p } from "../App";
-export function appendNewParagraphTo(div) {
+export function appendNewParagraphTo(paragraphText) { //createParagraph(paragraphText)
     let newParagraph = document.createElement("p");
     
-    textInput.value == "" ?
+    paragraphText == "" ?
     newParagraph.innerHTML = "<em>No text was entered</em>" :
-    newParagraph.innerText = textInput.value;
+    newParagraph.innerText = paragraphText;
     
     newParagraph.style.float = "left";
-    div.append(newParagraph);
+    return newParagraph;
     
     p.paragraphs.push({
       paragraphNumber: p.paragraphNumber,

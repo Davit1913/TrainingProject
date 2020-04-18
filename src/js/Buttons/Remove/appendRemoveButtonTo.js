@@ -2,13 +2,13 @@
 import { p } from "../../../App";
 import { createNewButton } from "../createNewButton";
 
-export function appendRemoveButtonTo(div) {
+export function appendRemoveButtonTo() { //createRemoveButton
     //TODO
     //Edit-i jamanak tvyal div@ remove anelu depq@
     let removeButton = createNewButton();
     removeButton.innerText = "Remove";
     removeButton.addEventListener("click", removeClosestDiv);
-    div.append(removeButton);
+    return removeButton;
   
     function removeClosestDiv() {
     this.closest("div").remove();     

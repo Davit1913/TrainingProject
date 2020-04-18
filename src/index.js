@@ -8,7 +8,7 @@
 // import App from "./App";
 // import { rootFunc } from "./App";
 import "./css/style.css";
-import { addDivWithParagraph } from "./js/addDivWithParagraph";
+import { Row } from "./App"
 
 let root = document.getElementById("root");
 
@@ -25,14 +25,22 @@ addButton.id = "addNewParagraphButton";
 addButton.innerText = "Add";
 section.append(addButton);
 
-addNewParagraphButton.addEventListener("click", addDivWithParagraph);
+addNewParagraphButton.addEventListener("click", addRow);
 // textInput.addEventListener("keyup", function catchEnterKey(event) {
-//   if(event.keyCode == 13) addDivWithParagraph()
+//   if(event.keyCode == 13) addRow()
 // });
 textInput.addEventListener("keyup", {handleEvent: catchEnterKey});
 
 function catchEnterKey(event) {
-  if(event.keyCode == 13) addDivWithParagraph();
+  if(event.keyCode == 13) addRow();
+}
+
+function addRow() {
+  let row = new Row(input.value);
+  row.appendRowTo(root);
+
+  textInput.value = "";
+  textInput.focus();
 }
 
 
